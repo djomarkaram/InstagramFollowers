@@ -68,7 +68,7 @@ def initialize_window():
     root.minsize(450, 500)
 
     # This is set to False to prevent tkinter from resizing the window based on the widgets that are in place.
-    root.grid_propagate(True)
+    root.grid_propagate(False)
     # This stretches the entire column when we resize the window horizontally.
     root.grid_columnconfigure(0, weight=2)
     # This configures the 6th row to have a weight of 1.
