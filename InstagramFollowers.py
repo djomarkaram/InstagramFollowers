@@ -398,38 +398,3 @@ set_theme("Dark")
 
 # Keep the program running.
 root.mainloop()
-
-
-'''
-Note #1
-    Below is how you read a file if you needed it:
-    my_file = open("my_followings.txt", "r")
-    following_data = my_file.read()
-
-    following_list = following_data.split("\n")
-    my_file.close()
-'''
-'''
-Note #2
-    To use the login_using_session() method, you have to be logged in to your insta account on Firefox and follow these steps:
-
-    1) Download and install Firefox for Windows
-    2) Login to your Instagram account in Firefox
-    3) Execute the snippet in a terminal/command line, e.g. with "python 615_import_firefox_session.py"
-    4) Then, "instaloader -l USERNAME"
-    5) Finally, run the "InstagramAnalytics.py" file in Visual Studio code and enter your USERNAME
-    6) The application should generate 3 text files: 
-        - my_followings.txt
-        - my_followers.txt
-        - accounts_not_following_back.txt
-'''
-'''
-Note #3
-    [dkaram]: Compare the old accounts that are not following me back to the ones that i just generated to see if someone unfollowed me.
-    [dkaram]: Start using the ttk instead of tk in order to stylize everything to make it look modern.
-    [dkaram]: Find a way to make this a standalone Windows app, MacOS app, and even a mobile app if possible instead of a script.
-    [dkaram]: Find a way to get the cookie file from chrome.
-'''
-'''
-To build this file and make it a .exe write the following in a terminal: pyinstaller --onefile -w .\InstagramAnalytics.py
-'''
